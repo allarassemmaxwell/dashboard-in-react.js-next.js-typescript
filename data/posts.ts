@@ -1,267 +1,172 @@
 import { Post } from "@/types/posts";
 
-const posts: Post[] = [   
+const posts: Post[] = [
     {
-        id: 1,
-        title: "First Post",
-        body: "This is the body of the first post.",    
-        author: "Author One",
-        date: "2023-10-01",
+        id: '1',
+        title: 'The Rise of Artificial Intelligence',
+        body: 'Artificial Intelligence (AI) is revolutionizing various industries...',
+        author: 'John Doe',
+        date: '2024-05-01',
+        comments: [
+            { id: '1', text: 'Great introduction!', username: 'Jane' },
+            {
+                id: '2',
+                text: 'Looking forward to more posts on this topic.',
+                username: 'Alex',
+            },
+        ],
+    },
+    {
+        id: '2',
+        title: 'Quantum Computing: A New Era of Computing',
+        body: 'Quantum computing holds the potential to solve problems...',
+        author: 'Emily Smith',
+        date: '2024-04-28',
+        comments: [
+            { id: '1', text: 'Fascinating read!', username: 'Mark' },
+            {
+                id: '2',
+                text: 'I have some questions about quantum algorithms.',
+                username: 'Sarah',
+            },
+        ],
+    },
+    {
+        id: '3',
+        title: 'Blockchain: Transforming Industries',
+        body: 'Blockchain technology is disrupting traditional industries...',
+        author: 'David Johnson',
+        date: '2024-05-03',
+        comments: [
+            { id: '1', text: 'Blockchain has immense potential!', username: 'Lucy' },
+            {
+                id: '2',
+                text: "I'm curious about its scalability.",
+                username: 'Michael',
+            },
+        ],
+    },
+    {
+        id: '4',
+        title: 'The Future of Augmented Reality',
+        body: 'Augmented Reality (AR) is changing the way we interact...',
+        author: 'Sophia Williams',
+        date: '2024-05-05',
+        comments: [
+            { id: '1', text: 'AR applications are amazing!', username: 'Grace' },
+            {
+                id: '2',
+                text: "Can't wait to see AR integrated into everyday life.",
+                username: 'Jack',
+            },
+        ],
+    },
+    {
+        id: '5',
+        title: 'The Internet of Things (IoT): Connecting Everything',
+        body: 'The Internet of Things (IoT) is creating interconnected...',
+        author: 'Andrew Brown',
+        date: '2024-05-08',
         comments: [
             {
-                id: 1,
-                text: "Great post!",
-                username: "user1",
+                id: '1',
+                text: 'IoT has huge potential for smart homes.',
+                username: 'Olivia',
             },
-            {   
-                id: 2,
-                text: "Thanks for sharing!",
-                username: "user2",
-            }
-        ]
-    },
-    {
-        id: 2,
-        title: "Second Post",
-        body: "This is the body of the second post.",
-        author: "Author Two",
-        date: "2023-10-02",
-        comments: [
-            {   
-                id: 3,
-                text: "Interesting read.",
-                username: "user3",
-            }
-        ]
-    },
-    {   
-        id: 3,
-        title: "Third Post",
-        body: "This is the body of the third post.",
-        author: "Author Three",
-        date: "2023-10-03",
-        comments: []
-    },          
-    {
-        id: 4,
-        title: "Fourth Post",
-        body: "This is the body of the fourth post.",
-        author: "Author Four",
-        date: "2023-10-04",
-        comments: []
-    },
-    {
-        id: 5,
-        title: "Fifth Post",
-        body: "This is the body of the fifth post.",
-        author: "Author Five",
-        date: "2023-10-05",
-        comments: [
-            {   
-                id: 5,
-                text: "Very informative.",
-                username: "user5",
+            {
+                id: '2',
+                text: 'Security concerns need to be addressed.',
+                username: 'William',
             },
-            {   
-                id: 6,
-                text: "I learned a lot.",
-                username: "user6",
-            }
-        ]
+        ],
     },
     {
-        id: 6,
-        title: "Sixth Post",
-        body: "This is the body of the sixth post.",
-        author: "Author Six",
-        date: "2023-10-06",
+        id: '6',
+        title: '5G Technology: The Next Generation of Connectivity',
+        body: '5G technology promises faster speeds and lower latency...',
+        author: 'Emma Davis',
+        date: '2024-05-10',
         comments: [
-            {   
-                id: 7,
-                text: "Can't wait for more!",
-                username: "user7",
-            }
-        ]
+            {
+                id: '1',
+                text: 'Excited for the possibilities with 5G.',
+                username: 'Sophie',
+            },
+            {
+                id: '2',
+                text: 'Hope it improves rural connectivity too.',
+                username: 'Ethan',
+            },
+        ],
     },
-    {   
-        id: 7,
-        title: "Seventh Post",
-        body: "This is the body of the seventh post.",
-        author: "Author Seven",
-        date: "2023-10-07",
+    {
+        id: '7',
+        title: 'Cybersecurity in the Digital Age',
+        body: 'As technology advances, cybersecurity becomes...',
+        author: 'Michael Johnson',
+        date: '2024-05-12',
         comments: [
-            {   
-                id: 8,
-                text: "This was helpful.",
-                username: "user8",
-            }
-        ]
+            {
+                id: '1',
+                text: 'Cybersecurity is crucial for protecting data.',
+                username: 'Ava',
+            },
+            { id: '2', text: 'Continuous monitoring is key.', username: 'Noah' },
+        ],
     },
-    {   
-        id: 8,
-        title: "Eighth Post",
-        body: "This is the body of the eighth post.",
-        author: "Author Eight", 
-        date: "2023-10-08",
+    {
+        id: '8',
+        title: 'Artificial Neural Networks: Mimicking the Brain',
+        body: 'Artificial Neural Networks (ANNs) are inspired by the...',
+        author: 'Isabella White',
+        date: '2024-05-15',
         comments: [
-            {   
-                id: 9,
-                text: "Great insights!",
-                username: "user9",
-            }
-        ]
+            {
+                id: '1',
+                text: 'ANNs have applications in various fields.',
+                username: 'Liam',
+            },
+            {
+                id: '2',
+                text: 'Training them requires a lot of data.',
+                username: 'Mia',
+            },
+        ],
     },
-    {   
-        id: 9,
-        title: "Ninth Post",
-        body: "This is the body of the ninth post.",
-        author: "Author Nine",
-        date: "2023-10-09",
-        comments: []
-    },
-    {   
-        id: 10,
-        title: "Tenth Post",
-        body: "This is the body of the tenth post.",
-        author: "Author Ten",
-        date: "2023-10-10",
+    {
+        id: '9',
+        title: 'Cloud Computing: Enabling Scalable Solutions',
+        body: 'Cloud computing provides on-demand access to computing...',
+        author: 'James Taylor',
+        date: '2024-05-18',
         comments: [
-            {   
-                id: 10,
-                text: "Amazing content!",
-                username: "user10",
-            }
-        ]
+            {
+                id: '1',
+                text: 'Cloud computing has transformed IT.',
+                username: 'Harper',
+            },
+            {
+                id: '2',
+                text: 'Concerned about data privacy in the cloud.',
+                username: 'Logan',
+            },
+        ],
     },
-    {   
-        id: 11,
-        title: "Eleventh Post",
-        body: "This is the body of the eleventh post.",
-        author: "Author Eleven",
-        date: "2023-10-11",
+    {
+        id: '10',
+        title: 'Machine Learning: Powering Intelligent Systems',
+        body: 'Machine Learning (ML) algorithms enable computers...',
+        author: 'Ava Johnson',
+        date: '2024-05-20',
         comments: [
-            {                
-                id: 11,
-                text: "Very well written.",
-                username: "user11",
-            }
-        ]
+            { id: '1', text: 'ML is reshaping industries.', username: 'Emma' },
+            {
+                id: '2',
+                text: "I'm interested in reinforcement learning.",
+                username: 'Daniel',
+            },
+        ],
     },
-    {   
-        
-        id: 12,
-        title: "Twelfth Post",
-        body: "This is the body of the twelfth post.",
-        author: "Author Twelve",
-        date: "2023-10-12",
-        comments: [
-            {                
-                id: 12,
-                text: "I appreciate the effort.",
-                username: "user12",
-            }
-        ]   
-    },
-    {   
-        id: 13,
-        title: "Thirteenth Post",
-        body: "This is the body of the thirteenth post.",
-        author: "Author Thirteen",
-        date: "2023-10-13",
-        comments: [
-            {                
-                id: 13,
-                text: "This was very useful.",
-                username: "user13",
-            }
-        ]
-    },
-    {   
-        id: 14,
-        title: "Fourteenth Post",
-        body: "This is the body of the fourteenth post.",
-        author: "Author Fourteen",
-        date: "2023-10-14",
-        comments: []
-    },
-    {   
-        id: 15,        
-        title: "Fifteenth Post",
-        body: "This is the body of the fifteenth post.",
-        author: "Author Fifteen",
-        date: "2023-10-15",
-        comments: [
-            {   
-                id: 15,        
-                text: "Excellent work!",
-                username: "user15",
-            }
-        ]
-    },
-    {   
-        id: 16,
-        title: "Sixteenth Post",
-        body: "This is the body of the sixteenth post.",
-        author: "Author Sixteen",
-        date: "2023-10-16",
-        comments: [
-            {                
-                id: 16,
-                text: "I really enjoyed this.",
-                username: "user16",
-            }
-        ]
-    },
-    {        
-        id: 17,
-        title: "Seventeenth Post",
-        body: "This is the body of the seventeenth post.",
-        author: "Author Seventeen",
-        date: "2023-10-17",
-        comments: [
-            {                
-                id: 17,
-                text: "This is fantastic!",
-                username: "user17",
-            }
-        ]
-    },
-    {        
-        id: 18,
-        title: "Eighteenth Post",
-        body: "This is the body of the eighteenth post.",
-        author: "Author Eighteen",
-        date: "2023-10-18",
-        comments: [
-            {                
-                id: 18,
-                text: "Very insightful.",
-                username: "user18",
-            }
-        ]
-    },
-    {        
-        id: 19,
-        title: "Nineteenth Post",
-        body: "This is the body of the nineteenth post.",
-        author: "Author Nineteen",
-        date: "2023-10-19",
-        comments: [
-            {                
-                id: 19,
-                text: "I learned a lot from this.",
-                username: "user19",
-            }
-        ]
-    },
-    {        
-        id: 20,
-        title: "Twentieth Post",    
-        body: "This is the body of the twentieth post.",
-        author: "Author Twenty",
-        date: "2023-10-20",
-        comments: []
-    }
-]
+];
 
 export default posts;
