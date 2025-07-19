@@ -43,9 +43,9 @@ const PostsTable = ({limit, title}:PostsTableProps) => {
                                 <TableCell className="hidden md:table-cell">{post.author}</TableCell>
                                 <TableCell className="hidden md:table-cell text-right">{new Date(post.date).toLocaleDateString()}</TableCell>   
                                 <TableCell>
-                                    <Link href={`/posts/edit/${post.id}`}>
-                                        <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs">Edit</Button>
-                                    </Link>    
+                                    <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs">
+                                        <Link href={`/posts/edit/${post.id}`}>Edit</Link>
+                                    </Button> 
                                 </TableCell>    
                             </TableRow>
                         ))}
